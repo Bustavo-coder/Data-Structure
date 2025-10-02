@@ -1,10 +1,8 @@
 package StackTest;
 
-import Stack.MyStack;
+import MyStack.MyStack;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import java.util.Stack;
 
 import static org.junit.jupiter.api.Assertions.*;
 

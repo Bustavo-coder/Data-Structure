@@ -1,4 +1,4 @@
-package Stack;
+package MyStack;
 
 public class MyStack {
     int count = 0;

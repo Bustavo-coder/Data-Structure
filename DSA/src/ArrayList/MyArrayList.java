@@ -88,4 +88,15 @@ public class MyArrayList {
         remove(position);
         return position > -1;
     }
+   public boolean add(int index, Object o){
+       if(index < 0 || index >= size()) throw new IndexOutOfBoundsException("Array index out of bounds");
+       int counter = count - 1;
+       for(int positon = count;positon > index;positon--){
+           elements[positon] = elements[counter--];
+       }
+       elements[index] = o;
+       count++;
+          return true;
+
+   }
 }
