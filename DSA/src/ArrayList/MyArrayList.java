@@ -3,9 +3,9 @@ package ArrayList;
 import java.util.Arrays;
 
 public class MyArrayList {
-    private int count = 0;
-    private int initialCapacity;
-    private Object [] elements;
+   protected int count = 0;
+   protected int initialCapacity;
+    protected Object [] elements;
     public MyArrayList() {
         this.elements = new Object [10];
     }
@@ -34,7 +34,7 @@ public class MyArrayList {
     public boolean contains(Object o){
         if(count > 0){
             for (Object a : this.elements) {
-                if (a.equals(o)) return true;
+                if (a == o) return true;
             }}
         return false;
     }
